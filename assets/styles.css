@@ -1,9 +1,4 @@
-/*  
-    #a4c2d1; egg blue
-    #dbdcde; light grey
-    #1f7798; mid-blue
-    #184f63; dark-blue
-*/
+
 
 /* global styles */
 
@@ -18,6 +13,11 @@ h1,
 h2 {
     font-family: "DM Serif Display", serif;
     color: #184f63;
+}
+
+.sharp-corners,
+.sharp-corners * {
+    border-radius: 0%;
 }
 
 #about {
@@ -39,4 +39,27 @@ h2 {
     min-height: 500px;
     padding: 5% 7%;
     background-color: #dbdcde;
+}
+
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+/* Media queries */
+
+/* Use Bootstrap breakpoint for XL screens */
+@media screen and (min-width: 1200px) {
+    /* Fixes all portfolio cards being to tall on XL screens */
+     #portfolio .card-text {
+        min-height: auto;
+     }
 }
